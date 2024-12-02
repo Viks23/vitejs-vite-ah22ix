@@ -1,12 +1,12 @@
-import React from "react";
 
-interface Props{
-    children:string;
+interface Props {
+    children: string;
+    onClick: () => void;
 }
 
-const Button = ({children}:Props) => {
+const Button = ({children,onClick}:Props) => {
   return (
-    <div className='btn btn-primary'>{children}</div>
+    <div className='btn btn-primary' onClick={onClick}>{children}</div>
   )
 }
 

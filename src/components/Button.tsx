@@ -1,6 +1,12 @@
-const Button = () => {
+import React from "react";
+
+interface Props{
+    children:string;
+}
+
+const Button = ({children}:Props) => {
   return (
-    <div className='btn btn-primary'>Button</div>
+    <div className='btn btn-primary'>{children}</div>
   )
 }
 
